@@ -1,0 +1,99 @@
+.hero-section {
+    height: 100vh; /* Full viewport height */
+    background: center no-repeat;
+    background-image: url('../uploads/imgs/banner-wp.jpg');
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-color: #5c636e; /* Fallback color */
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
+.content-container {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1280px;
+    text-align: center;
+    color: #ffffff;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #ffffff;
+    @media (min-width: 768px) {
+        font-size: 3rem; /* Larger text on medium screens and above */
+    }
+    @media (min-width: 1024px) {
+        font-size: 4rem; /* Even larger text on large screens */
+    }
+}
+
+p {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #D1D5DB;
+    padding: 0 4rem;
+    @media (min-width: 768px) {
+        font-size: 1.25rem; /* Larger text on medium screens and above */
+    }
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 640px) {
+        flex-direction: row;
+    }
+}
+
+.btn-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1D4ED8;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1E40AF;
+}
+
+.arrow-icon {
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-left: 0.5rem;
+    transform: rotate(0deg);
+}
+
+.btn-secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+}
