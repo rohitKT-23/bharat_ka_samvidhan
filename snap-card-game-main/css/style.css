@@ -1,0 +1,83 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Play", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #00512c;
+  font-weight: bold;
+  color: white;
+}
+
+#cardPiles {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+img {
+  display: block;
+  margin: 2rem auto;
+}
+
+label {
+  align-self: flex-end;
+}
+
+button {
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  width: 12rem;
+  height: 8rem;
+}
+
+#bigHand {
+  position: absolute;
+  left: 30%;
+  top: 29%;
+}
+
+span {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  font-size: 5rem;
+}
+
+#resetButton {
+  position: fixed;
+  top: 15%;
+  left: 5%;
+  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.hidden {
+  display: none;
+}
